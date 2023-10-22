@@ -45,10 +45,10 @@ select "data", "data" -> 'address' ? 'remark' from example_json;
 select "data", "data" ? 'address' from example_json;
 select "data", "data" -> 'address' ? 'remark' from example_json;
 ```
-@@ json path
+@? json path
 
 ```sql
-select "data", "data" @@ '$[*].account_id == 1' from example_json;
+select "data", "data" @? '$[*].account_id == 1' from example_json;
 ```
 
 # Function
